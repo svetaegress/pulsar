@@ -11,8 +11,8 @@ if a > b && a > c
   hipotenuse, a, b = a, b, c
 elsif b > a && b > c
   hipotenuse, b = b, c
-elsif c > a && c > 
-  hipotenuse = c 
+elsif c > a && c >
+  hipotenuse = c
 else
   puts "Треугольник не прямоугольный"
 end
@@ -27,6 +27,6 @@ end
 
 # Равнобедренный ли Треугольник
 
-if a == b || a = c || c = b 
+if a == b || a = c || c = b
   puts "Треугольник Равнобедренный"
 end
