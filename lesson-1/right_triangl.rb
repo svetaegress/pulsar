@@ -7,26 +7,34 @@ b = gets.to_f
 print "Сторона C"
 c = gets.to_f
 
-if a > b && a > c
-  hipotenuse, a, b = a, b, c
-elsif b > a && b > c
-  hipotenuse, b = b, c
-elsif c > a && c >
-  hipotenuse = c
-else
-  puts "Треугольник не прямоугольный"
+if a > b && a > c 
+  hyp = a
+  kat = b
+  kat2 = c
+elsif b > c
+  hyp = b
+  kat1 = a
+  kat2 = c
+else 
+  hyp = c
+  kat1 = a
+  kat2 = b
 end
 
-# если гипотенуза есть, вычисляем по формуле Пифагора
-
-if hipotenuse && hipotenuse ** 2 == a ** 2 + b ** 2
+if hyp && hyp ** 2 == a ** 2 + b ** 2
   puts "Треугольник прямоугольный"
-elsif hipotenuse
+elsif hyp
   puts "Треугольник не прямоугольный"
 end
-
-# Равнобедренный ли Треугольник
 
 if a == b || a = c || c = b
-  puts "Треугольник Равнобедренный"
+  puts "Треугольник равнобедренный"
+else
+	print "Треугольник не равнобедренный"
 end
+
+
+if a == b && b == c
+  puts "Треугольник равносторонний"
+end
+
