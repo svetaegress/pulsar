@@ -9,9 +9,9 @@ c = gets.to_f
 
 if a > b && a > c 
   hyp = a
-  kat = b
+  kat1 = b
   kat2 = c
-elsif b > c
+elsif b > c and b > a
   hyp = b
   kat1 = a
   kat2 = c
@@ -21,9 +21,9 @@ else
   kat2 = b
 end
 
-if hyp && hyp ** 2 == a ** 2 + b ** 2
+if a ** 2 + b ** 2 == hyp ** 2
   puts "Треугольник прямоугольный"
-elsif hyp
+else 
   puts "Треугольник не прямоугольный"
 end
 
@@ -35,6 +35,6 @@ end
 
 
 if a == b && b == c
-  puts "Треугольник равносторонний"
+  puts "Треугольник равносторонний, равнобедренный и не прямоугольный"
 end
 
